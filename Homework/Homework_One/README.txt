@@ -8,3 +8,4 @@ To complete this homework, complete the following:
 - Submit your github link/URL for the assignment submission. 
 
 Website Link: 
+https://jjuarez00.github.io/N220/Homework/Homework_One/simpleCalculations.html
