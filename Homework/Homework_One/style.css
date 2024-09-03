@@ -1,0 +1,33 @@
+body {
+    background-color: #8fa8b3;
+    font-family:Verdana, Geneva, Tahoma, sans-serif
+    }
+
+img { 
+    border: 2px solid gray;
+    padding: 5px;
+    width: 60%;
+    }
+        
+div {
+    border: 1px solid black;
+    width: 200px;
+    float: left;
+    padding: 5px 10px;
+    margin-right: 1.5em;
+    }
+        
+section {
+    border: 1px solid black;
+    background-color: #cfe0e7;
+    margin-bottom: 1em;
+    padding: 0.25em 1em;
+        }
+        
+    .clearfix::before,
+        
+    .clearfix::after {
+            content: "";
+            display: block;
+            clear: both;
+        }
