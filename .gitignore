@@ -1,0 +1,11 @@
+# Ignore Mac System files
+.DS_store
+
+# Ignore node_modules folder
+node_modules
+
+# Ignore all text files
+*.txt
+
+# Ignore vs code folder
+.vscode
