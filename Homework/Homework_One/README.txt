@@ -7,4 +7,4 @@ To complete this homework, complete the following:
 - Upload your project to the web 4 server and github.
 - Submit your github link/URL for the assignment submission. 
 
-Live Website Link: 
+Website Link: 
