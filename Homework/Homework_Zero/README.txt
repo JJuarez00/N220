@@ -6,4 +6,4 @@ To complete this homework, complete the following:
 - Add the github pages link to the readme.txt file. 
 - Submit your github repo URL for the assignment submission. 
 
-Link to website: https://jjuarez00.github.io/N220/Homework/Homework_Zero/test.html
+Website Link: https://jjuarez00.github.io/N220/Homework/Homework_Zero/test.html
