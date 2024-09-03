@@ -1,108 +1,101 @@
 <!DOCTYPE html>
-<html>
-
+<html lang="en">
 <head>
-    <title>Simple Calculations</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Basics</title>
     <style>
-        body {background-color: #6f8a96;
-              font-family:Verdana, Geneva, Tahoma, sans-serif
+        body {
+            background-color: #9e9e9e;
+            font-family:Verdana, Geneva, Tahoma, sans-serif
             }
-
-        img {
-            border: 2px solid gray;
-            padding: 5px;
-            width: 60%;
-        }
-        
-        div {
-            border: 1px solid black;
-            width: 200px;
-            float: left;
-            padding: 5px 10px;
-            margin-right: 1.5em;
-        }
-        
-        section {
-            border: 1px solid black;
-            margin-bottom: 1em;
-            padding: 0.25em 1em;
-        }
-        
-        .clearfix::before,
-        .clearfix::after {
-            content: "";
-            display: block;
-            clear: both;
-        }
     </style>
+    
 </head>
-
 <body>
-    <h1>Simple Calculations</h1>
-    <p>Read the directions and answer the following problems.</p>
+    <h1>Arithmetic</h1>
+    <ul>
+        <li id="multi">Multiplication: </li>
+        <li id="division">Division: </li>
+        <li id="remainder">Remainder/Modulus: </li>
+        <li id="exponents">Exponents: </li>
+        <li id="increment">Increment: </li>
+        <li id="decrement">Decrement: </li>
+    </ul>
+    <h2>Increment/Decrement Issue</h2>
+    <p id="before">Before: </p>
+    <p id="after">After: </p>
+    <h1>Assignment</h1>
+    <ul>
+        <li id="notSign">Not: </li>
+        <li id="addTo">Add to Value: </li>
+        <li id="subTo">Subtract from Value: </li>
+        <li id="otherT">Other from Value: </li>
 
-    <section>
-        <h3>Dating</h3>
-        <p>Larry takes two friends to the movie. If tickets cost $14.00, how much will Larry spend on tickets?</p>
-        <p id="ticketNum">Tickets: </p>
-        <p id="ticketCost">Cost: $</p>
-        <p id="ttCost">Total: $
-            <script>
-                var pizza = 4;
-                pizza;
-            </script>
-        </p>
-    </section>
-    <section>
-        <h3>Shopping</h3>
-        <p>You have $235.87 in your bank account. You want to purchase a new outfit: shirt, pants, and shoes. Calculate how much money will be left in your account after your purchase. <br/> NOTE: Create variables for at LEAST the items you wish to purchase.</p>
-        <ul>
-            <li>Jacket: $70</li>
-            <li>Sweater: $55</li>
-            <li>Shirt: $35</li>
-            <li>Pants: $75</li>
-            <li>Skirt: $49</li>
-            <li>Sandals: $30</li>
-            <li>Shoes: $60</li>
-        </ul>
-        <p id="bank"></p>
-        <p>You decide you want to add a jacket to complete the outfit.Using expressions, display whether you have enough funds to add the jacket. (True or False)</p>
-        <p id="addJacket"></p>
-    </section>
-    <section>
-        <h3>Pizza</h3>
-        <p>If Professor Rector bought 4 pizzas and she estimated each student would eat 2.5 pieces of pizza and each pizza had 8 slices, how many students could she feed? How many pieces of pizza would be left over for Professor Rector?</p>
-        <p id='profPizza'></p>
-    </section>
-    <section class="clearfix">
-        <h3>Monty's Mega Bar</h3>
-        <p>Calculate the final price of the meal.</p>
-        <div>
-            <h3>Monty's MegaBar</h3>
-            <p>Adult: $12.00</p>
-            <p>Child: $6</p>
-            <p>Drinks: $1.50</p>
-        </div>
-        <div>
-            <h3>Monty's MegaBar Receipt</h3>
-            <p>2 Adult Buffet<br/> 1 Child Buffet<br/> 3 Drinks</p>
-        </div>
-        <div>
-            <h3>Monty's Answers</h3>
-            <p id="Monty"></p>
-        </div>
-    </section>
-    <section>
-        <h3>Average Earned Tips</h3>
-        <p>You work at a restaurant and want to figure out your average weekly tips. Find your weekly average for the past month.</p>
-        <ul>
-            <li>Week 1: 202.45</li>
-            <li>Week 2: 134.97</li>
-            <li>Week 3: 256.63</li>
-            <li>Week 4: 178.22</li>
-        </ul>
-        <p id="tips"></p>
+    </ul>
+    <h1>Comparison</h1>
+    <ul>
+        <li id="equal">Equal Value: </li>
+        <li id="equalVT">Equal Value and Type: </li>
+        <li id="nEqual">Not Equal Value: </li>
+        <li id="nEqualVT">Not Equal Value and Type: </li>
+        <li id="gThan">Greater Than: </li>
+        <li id="LThanOrEqual">Less Than or Equal To: </li>
+    </ul>
 
+    <script>
+        //base for elements: document.getElementById('').innerHTML += 
+       
+       
+        //Arithmetic
+        const myName = "Luh Joe Mama";
+        console.log(myName);
+
+        document.getElementById('multi').innerHTML += " 3 x 2 = " + 3*2;
+
+        document.getElementById('division').innerHTML += " 6 / 2 = " + 6/2;
+        document.getElementById('remainder').innerHTML += " 4 % 3 = " + (4%3);
+        document.getElementById('exponents').innerHTML += " 2 ** 3 = " + (2 ** 3);
+        let incrementNumber = 3;
+        document.getElementById('increment').innerHTML += " ++3 = " + ++incrementNumber;
+        let decrementNumber = 3;
+        document.getElementById('decrement').innerHTML += " --3 = " + --decrementNumber;
+
+        //Issue
+        let incrementNumberIssue = 2;
+        document.getElementById('before').innerHTML += "with ++ before the number [ex: ++2] will get you {" + ++incrementNumberIssue + "}";
+        
+        let incrementNumberIssueFix = 2;
+        document.getElementById('after').innerHTML += "with ++ after the number [ex: 2++] will get you {" + incrementNumberIssueFix++ + "}";
+
+
+
+        //Assignment
+        document.getElementById('notSign').innerHTML += " !5 = " + !5;
+        document.getElementById('notSign').innerHTML += "<li>Not: !5 = " + !"";
+
+
+        let addToNum = 5;
+        addToNum +=2;
+        document.getElementById('addTo').innerHTML += " 5 += 2 gets you " + addToNum;
+
+        let subToNum = 5;
+        subToNum -=2;
+        document.getElementById('subTo').innerHTML += " 5 -= 2 gets you " + subToNum;
+
+
+
+        //Comparison
+        document.getElementById('equal').innerHTML += " 3 == '3' = " + (3 == "3");
+        document.getElementById('equalVT').innerHTML += " 3 === '3' = " + (3 === "3");
+
+        document.getElementById('nEqual').innerHTML += " 3 != 3 = " + (3 != "3");
+        document.getElementById('nEqualVT').innerHTML += " 3 != 3 = " + (3 !== "3");
+
+        document.getElementById('gThan').innerHTML += " 3 > 2 = " + (3>2);
+        document.getElementById('LThanOrEqual').innerHTML += " 3 <= 2 = " + (3<=2);
+
+
+    </script>
 </body>
-
 </html>
