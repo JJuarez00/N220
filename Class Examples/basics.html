@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Basics</title>
+    <style>
+        body {
+            background-color: #9e9e9e;
+            font-family:Verdana, Geneva, Tahoma, sans-serif
+            }
+    </style>
+    
+</head>
+<body>
+    <h1>Arithmetic</h1>
+    <ul>
+        <li id="multi">Multiplication: </li>
+        <li id="division">Division: </li>
+        <li id="remainder">Remainder/Modulus: </li>
+        <li id="exponents">Exponents: </li>
+        <li id="increment">Increment: </li>
+        <li id="decrement">Decrement: </li>
+    </ul>
+    <h2>Increment/Decrement Issue</h2>
+    <p id="before">Before: </p>
+    <p id="after">After: </p>
+    <h1>Assignment</h1>
+    <ul>
+        <li id="notSign">Not: </li>
+        <li id="addTo">Add to Value: </li>
+        <li id="subTo">Subtract from Value: </li>
+        <li id="otherT">Other from Value: </li>
+
+    </ul>
+    <h1>Comparison</h1>
+    <ul>
+        <li id="equal">Equal Value: </li>
+        <li id="equalVT">Equal Value and Type: </li>
+        <li id="nEqual">Not Equal Value: </li>
+        <li id="nEqualVT">Not Equal Value and Type: </li>
+        <li id="gThan">Greater Than: </li>
+        <li id="LThanOrEqual">Less Than or Equal To: </li>
+    </ul>
+
+    <script>
+        //base for elements: document.getElementById('').innerHTML += 
+       
+       
+        //Arithmetic
+        const myName = "Luh Joe Mama";
+        console.log(myName);
+
+        document.getElementById('multi').innerHTML += " 3 x 2 = " + 3*2;
+        // example color document.getElementById('multi').style.backgroundColor = "#d6e5ec";
+
+
+        document.getElementById('division').innerHTML += " 6 / 2 = " + 6/2;
+        document.getElementById('remainder').innerHTML += " 4 % 3 = " + (4%3);
+        document.getElementById('exponents').innerHTML += " 2 ** 3 = " + (2 ** 3);
+        let incrementNumber = 3;
+        document.getElementById('increment').innerHTML += " ++3 = " + ++incrementNumber;
+        let decrementNumber = 3;
+        document.getElementById('decrement').innerHTML += " --3 = " + --decrementNumber;
+
+        //Issue
+        let incrementNumberIssue = 2;
+        document.getElementById('before').innerHTML += "with ++ before the number [ex: ++2] will get you {" + ++incrementNumberIssue + "}";
+        
+        let incrementNumberIssueFix = 2;
+        document.getElementById('after').innerHTML += "with ++ after the number [ex: 2++] will get you {" + incrementNumberIssueFix++ + "}";
+
+
+
+        //Assignment
+        document.getElementById('notSign').innerHTML += " !5 = " + !5;
+        document.getElementById('notSign').innerHTML += "<li>Not: !5 = " + !"";
+
+
+        let addToNum = 5;
+        addToNum +=2;
+        document.getElementById('addTo').innerHTML += " 5 += 2 gets you " + addToNum;
+
+        let subToNum = 5;
+        subToNum -=2;
+        document.getElementById('subTo').innerHTML += " 5 -= 2 gets you " + subToNum;
+
+
+
+        //Comparison
+        document.getElementById('equal').innerHTML += " 3 == '3' = " + (3 == "3");
+        document.getElementById('equalVT').innerHTML += " 3 === '3' = " + (3 === "3");
+
+        document.getElementById('nEqual').innerHTML += " 3 != 3 = " + (3 != "3");
+        document.getElementById('nEqualVT').innerHTML += " 3 != 3 = " + (3 !== "3");
+
+        document.getElementById('gThan').innerHTML += " 3 > 2 = " + (3>2);
+        document.getElementById('LThanOrEqual').innerHTML += " 3 <= 2 = " + (3<=2);
+
+
+    </script>
+</body>
+</html>
