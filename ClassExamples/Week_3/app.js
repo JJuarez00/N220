@@ -12,3 +12,9 @@ function simpleFunctionTwo() {
 }
 
 simpleFunctionTwo();
+
+function sayHelloWorld() {
+    console.log("Hello World! This is function Two.");
+}
+
+sayHelloWorld();
