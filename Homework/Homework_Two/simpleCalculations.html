@@ -8,7 +8,7 @@
     </head>
 
 <body>
-    <h1>Simple Calculations</h1>
+    <h1 class="sitetitle">Simple Calculations</h1>
     <p>Read the directions and answer the following problems.</p>
 
     <section>
@@ -16,13 +16,9 @@
         <p>Larry takes two friends to the movie. If tickets cost $14.00, how much will Larry spend on tickets?</p>
         <p id="ticketNum">Tickets: </p>
         <p id="ticketCost">Cost: $</p>
-        <p id="ttCost">Total: $
-            <script>
-                var pizza = 4;
-                pizza;
-            </script>
-        </p>
+        <p id="ttCost">Total: $</p>
     </section>
+
     <section>
         <h3>Shopping</h3>
         <p>You have $235.87 in your bank account. You want to purchase a new outfit: shirt, pants, and shoes. Calculate how much money will be left in your account after your purchase. <br/> NOTE: Create variables for at LEAST the items you wish to purchase.</p>
@@ -35,15 +31,21 @@
             <li>Sandals: $30</li>
             <li>Shoes: $60</li>
         </ul>
-        <p id="bank"></p>
+        <p id="bank">[i] Shirt + Pants + Shoes would leave me with: $</p>
         <p>You decide you want to add a jacket to complete the outfit.Using expressions, display whether you have enough funds to add the jacket. (True or False)</p>
-        <p id="addJacket"></p>
+        <p>[ii] Would I have enough for the jacket?</p>
+        <p class="jacket" id="addJacket"></p>
     </section>
+
     <section>
         <h3>Pizza</h3>
         <p>If Professor Rector bought 4 pizzas and she estimated each student would eat 2.5 pieces of pizza and each pizza had 8 slices, how many students could she feed? How many pieces of pizza would be left over for Professor Rector?</p>
-        <p id='profPizza'></p>
+        <p id='profPizzai'>[i] Students: </p>
+        <p id='profPizzaii'>[ii] Amount Left: </p>
+
+
     </section>
+
     <section class="clearfix">
         <h3>Monty's Mega Bar</h3>
         <p>Calculate the final price of the meal.</p>
@@ -59,9 +61,10 @@
         </div>
         <div>
             <h3>Monty's Answers</h3>
-            <p id="Monty"></p>
+            <p id="Monty">$</p>
         </div>
     </section>
+
     <section>
         <h3>Average Earned Tips</h3>
         <p>You work at a restaurant and want to figure out your average weekly tips. Find your weekly average for the past month.</p>
