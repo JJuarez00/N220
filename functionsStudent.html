@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>body {background-color:rgb(200,225,255);}
+    div {background-color:white; padding:10px; margin:10px; border:1px solid gray;}
+    h4 {margin:0;}
+    label {display:inline-block; width:50px;}
+    </style>
+<body>
+    <h2>Fun with Functions</h2>
+<div>
+<h4>Simple Function</h4>
+<p id='changeTxt'>Using a function, change the text of this paragraph.</p>
+</div>
+<div>
+<h4>Another Simple Function</h4>
+<p>Print "This function does not take parameters." at the very bottom of the page.</p>
+</div>
+<div>
+<h4>Yet Another Simple Function</h4>
+<p>Print out Hello, World in the console.</p>
+</div>
+<div>
+<h4>Simple function with a parameter</h4>
+<p>Print your favorite band in the following paragraph.</p>
+  <p id="favBand"></p>
+</div>
+<div>
+<h4>Another Simple function with a parameter</h4>
+<p>Print your first name in the console using a parameter.</p>
+</div>
+<div>
+<h4>Using Parameters: Rectangle Perimeter Calculator</h4>
+  <p>Set height and width variables. Write a function that uses these variables to calculate the perimeter and displays that in the paragraph below.</p>
+<p id="panswer"></p>
+</div>
+<div>
+<h4>Simple Function: Square Foot Calculator</h4>
+<label>Height:</label>
+<input type="number" id="height"/><br/>
+<label>Width:</label>
+<input type="number" id="width"/><br/>
+<input type="button" id="area" onclick="calcArea()" value="Calculate"/>
+<p id="answer"></p>
+</div>
+<div>
+<h4>Multiple Values Function: Rectangle Properties</h4>
+  <p>Using one function, print out the area and perimeter of a rectangle.</p>
+<p id="multiAnswer">
+</div>
+<div>
+  <h4>Button Functions</h4>
+  <p>Write the code that makes a window pop up with text that reads "Who goes there?"</p>
+<button onclick="myFunction()">Try it</button>
+</div>
+<div>
+  <h4>Button Functions with Parameters</h4>
+  <p>Create a function that takes two parameters: name and occupation. When the user clicks on the button, the paragraph below will display something like "Welcome Harry Potter, the wizard!"</p>
+<button onclick="wizard('Harry Potter','Wizard')">Greeting</button>
+<p id="future"></p>
+</div>
+<div>
+  <h4>Another Button Function</h4>
+  <p>Create a pop up window that asks for input. The input should say "Add Item:" and will then print the response in the console.</p>
+
+  <button onclick="addItem()">Add Item</button></div>
+<div>
+  <h4>Return Values</h4>
+  <p>Create a pop up window that displays the return value.</p></div>
+
+
+</body>
+</html>
