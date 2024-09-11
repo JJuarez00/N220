@@ -1,0 +1,67 @@
+body {
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+
+}
+
+h1 {
+    font-size: 35px;
+    border: 3px solid black;
+    text-align: center;
+    background-color: rgb(206, 212, 212);
+    border-radius: 5.5px;
+    margin-top: 3em;
+    margin-left: 4em;
+    margin-right: 4em;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+.boxOne {
+    font-size: 22px;
+    background-color: rgb(206, 212, 212);
+    border-radius: 5.5px;
+    border: 3px solid black;
+    margin-left: 5em;
+    margin-right: 5em;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+table {
+margin: 0px auto;
+}
+
+.righty {
+    text-align: end;
+    padding-right: 5px;
+}
+
+.infoInHere{
+    height: 20px;
+    width: 145px;
+}
+
+.button {
+    margin-top: 4px;
+    font-size: 14px;
+    background-color: rgb(205, 60, 60);
+    color: rgb(255, 255, 255);
+    height: 35px;
+    width: 150px;
+    box-shadow: .5px .5px black;
+}
+
+.button:hover {
+    font-size: 13.9px;
+    background-color: rgb(191, 56, 56);
+    color: rgb(230, 221, 221);
+    box-shadow: 0px 0px black;
+
+}
+
+.boxTwo {
+    margin-right: 6em;
+    margin-left: 6em;
+}
+
