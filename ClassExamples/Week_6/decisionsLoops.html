@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Decisions</title>
+    <style>body>div{width:45%; float:left;border:1px solid black; padding:0 10px;margin:10px;box-sizing:border-box; background-color:white;
+box-shadow:2px 2px 6px rgba(0,0,0,0.5); min-height:175px;}
+body {background-color:steelBlue;}
+#dice_1, #dice2 {float:left; margin:0 10px;}
+input{display:block;margin-bottom:10px;}
+
+
+img {
+  width:75px;
+  height:auto;
+}
+
+#grades {
+  clear:both;
+  width:92.5%;
+}
+
+h4{color:crimson;}
+</style>
+</head>
+<body>
+    <h2>If/else Statements</h2>
+<div>
+  <h4>Bank Account</h4>
+  <p>Checking Account: $45.67<br/>
+    New Toy: $45.99</p>
+  <p id="bank"></p>
+</div>
+<div>
+  <h4>Birthday Month</h4>
+  <p>Find today's month and see if it's your birthday month!</p>
+  <p id="birthday"></p>
+</div>
+<div>
+  <h4>Right to Vote</h4>
+<p>Are you old enough to vote?</p>
+<label for="age">Current Age:</label>
+<input type="number" id="age" name="age"/>
+<input type="button" value="Check Age" onclick="checkAge()"/>
+  <p id="voteAge"></p></div>
+<div>
+  <h4>Time of Day</h4>
+  <p>Find the time of day to determine your greeting.</p>
+  <p id="myTime"></p>
+</div>
+<div id="grades">
+<p>Here are your grades:</p>
+<ul>
+  <li>Tests: 47,62</li>
+  <li>Midterm: 78/100</li>
+  <li>Final: 87/100</li>
+  <li>Total points: 350</li>
+  <li>Class Average: 85</li>
+</ul>
+<p>In order to pass the class, your midterm must be higher than 50% and your final must be higher than 72%.</p>
+<p>In order for the class to be complete, you have to have passed both the midterm and final OR your class average needs to be great than 80.
+<hr/>
+<p>Figure out the answers to the following and put it in the paragraph with the msg ID:</p>
+<ul>
+  <li>Your Midterm Grade:</li>
+  <li>Did you pass your midterm?</li>
+  <li>Did you pass the class?</li>
+  <li>Is the class completed?</li>
+<ul>
+<p id="msg"></p>
+<p id="testMsg"></p>
+  </div>
+  <div>
+  <h4>Random Number</h4>
+    <p>Find a random number between 1 and 20.</p>
+    <input type="button" value="Random Number" onclick="newNum()"/>
+    <p id="rNum20"></p>
+</div>
+<div>
+  <h4>Dice Game</h4>
+  <input type="button" value="Roll Die" onclick="rollDie()"/>
+  <div id="dice_1"></div>
+  <div id="dice_2"></div>
+</div>
+  
+  <div>
+    <h4>Seasons of the Year</h4>
+    <p>Determine the season of the year by the month</p>
+    <p id="season"></p>
+  </div>
+
+</body>
+</html>
