@@ -4,9 +4,12 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Javascript: Built-In Objects</title>
+    <script defer src="app.js"> </script>
+
    <style>
     div {background-color: lightgray; padding:1em; margin:2em; border:1px solid black;}
    </style>
+
   </head>
   <body>
    <div>
@@ -26,14 +29,20 @@
     <h1>Built-In Objects</h1>
     <h2>Window/Browser Object</h2>
     <p id="hwDetails"></p>
+
     <input type="button" value="IUPUI" onclick="IUPUIWebsite()" />
     <input type="button" value="printPage" onclick="printPage()" />
     <p id="wpDetails"></p>
+
     <hr/>
+
+
     <h2>Document Object</h2>
     <p id="dpDetails"></p>
     <p id="domain"></p>
-    <p id="update"></p>
+    <p id="update">
+          <p span id="delete"></p>
+    </p>
     <h2>String Object</h2>
     <label>Greeting: </label>
     <input type="text" id="greeting" onkeyup="getGreeting()" />
@@ -44,11 +53,19 @@
     </p>
     <p id="class"></p>
     <p id="trim"></p>
+
+
     <hr />
+
+
     <h2>Number Object</h2>
     <p id="fixed"></p>
     <p id="precise"></p>
+
+
     <hr/>
+
+
     <h2>Math Object</h2>
     <p id="pi"></p>
     <p id="round"></p>
