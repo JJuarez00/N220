@@ -14,7 +14,7 @@ let bankAmount = 235.87;
 let shirtCost = 35;
 let pantCost = 75;
 let shoeCost = 60;
-let totalCostOne = bankAmount - shirtCost - pantCost - shirtCost;
+let totalCostOne = bankAmount - (shirtCost + pantCost + shoeCost);
 
 document.getElementById("bank").innerHTML += totalCostOne;
 
@@ -33,6 +33,7 @@ let pizzaRemainder = (pizzaSlice % studentEat) * totalPizza;
 
 document.getElementById("profPizzai").innerHTML += Math.floor(studentTotal); //Round Down, not up since student will not have 2.5 slices.
 document.getElementById("profPizzaii").innerHTML += pizzaRemainder;
+
 
 
 //Monty's Mega Bar
