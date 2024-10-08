@@ -1,4 +1,3 @@
-
 function getTotal() {
 
     clearText("answer")
@@ -22,3 +21,4 @@ function getTotal() {
 function clearText(id) {
     document.getElementById(id).innerHTML = "";
 }
+
