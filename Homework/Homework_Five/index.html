@@ -1,1 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
 
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Homework 5</title>
+    <link rel="stylesheet" href="style.css">
+
+    <style>
+    @import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+    </style>    
+</head>
+
+<body onload="checkID()">
+    <h1>Escaping Capture</h1>
+
+    <h2 id="text"></h2>
+    
+    <div class="box">
+    <button onclick="yes()" id="yes" class="yes">Yes</button>
+    <button onclick="no()" id="no" class="no">No</button>
+    <p id="countDown"></p>
+    </div>
+
+    <div class="box2">
+        <p class="decision">DecisionID</p>
+        <p id="decisionID"></p>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+
+</html>
