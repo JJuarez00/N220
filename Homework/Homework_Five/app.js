@@ -37,12 +37,15 @@ function checkID() {
         } else if (d === 10) { // possible ending.
             document.querySelector("#text").innerHTML = `The guard enters the room and doesn't see you. You take the chance to quickly escape through the door without a problem.`;
             removeButton();
+            countDown();            
         } else if (d === 12) { // possible ending.
             document.querySelector("#text").innerHTML = `The guard seems sympathetic and loosens your restraints. You seize the opportunity to escape.`;
             removeButton();
+            countDown();
         } else if (d === 14) { // possible ending.
             document.querySelector("#text").innerHTML = `You attempt to fight but he knocks you out cold, and ties you back up.`;
             removeButton();
+            countDown();
         };
     } else {
         if (d === 3) {
@@ -52,22 +55,24 @@ function checkID() {
             document.querySelector("#text").innerHTML = `You decide not to, but suddenly someone outside the door. Do you hide?`;
             d += 4;
         } else if (d === 7) {
-            document.querySelector(
-              "#text"
-            ).innerHTML = `You stay silent as the guard enters. You suddenly free yourself since the rope was pretty frail. Do you attack the guard?`;
+            document.querySelector("#text").innerHTML = `You stay silent as the guard enters. You suddenly free yourself since the rope was pretty frail. Do you attack the guard?`;
             d += 6;
         } else if (d === 9) { // possible ending.
             document.querySelector("#text").innerHTML = `The noise you made caught the attention of the guard, and you're tied up again!`;
             removeButton();
+            countDown();
         } else if (d === 11) { // possible ending.
             document.querySelector("#text").innerHTML = `Guard sees you, and ties you back up.`;
             removeButton();
+            countDown();
         } else if (d === 13) { // possible ending.
             document.querySelector("#text").innerHTML = `You are dull and loud, so the guard knocks you out.`;
             removeButton();
+            countDown();
         } else if (d === 15) { // possible ending.
             document.querySelector("#text").innerHTML = `You decide to run out the door, and successfully escape.`;
             removeButton();
+            countDown();
         };
     };
 };
@@ -94,6 +99,6 @@ function countDown() {
         } else if (count === 0) {
             clearInterval(interval); // stop countdown.
             location.reload(); // reload page to reset story.
-        }
+        };
     }, 1000); // speed of countdown (set to 1 sec).
-}
+};
