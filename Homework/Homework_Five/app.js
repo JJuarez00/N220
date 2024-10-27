@@ -79,22 +79,23 @@ function checkID() {
 
 
 function removeButton() {
-    document.querySelector("#yes").style.display = "none";
-    document.querySelector("#no").style.display = "none";
+  document.querySelector("#yes").style.display = "none"; // makes the button disappear.
+  document.querySelector("#no").style.display = "none"; // makes the button disappear.
 };
 
 function countDown() {
-    let countHTML = 3;
-    let count = 4;
+    let countHTML = 3; // 3 seconds count down on HTML, so the extra second can be used to display the "Reloading" text.
+    let count = 4; // 4 second count down to reset page
     document.querySelector("#countDown").innerHTML = `<p class="reset">${countHTML}</p>`; 
 
     let interval = setInterval(() => {
         count--;
         countHTML--;
         
-        if (count > 1) {
+        if (count > 1) { // needed in order to remove -1 from being displayed.
             document.querySelector("#countDown").innerHTML = `<p class="reset">${countHTML}</p>`;
-        } else if (count === 1) {
+        } else if (count === 1) { // show the "Resetting" text so the user can see it before page resets.
+            document.querySelector("#text").innerHTML = ` `;
             document.querySelector("#countDown").innerHTML = `<p class="reset">Resetting</p>`;
         } else if (count === 0) {
             clearInterval(interval); // stop countdown.
