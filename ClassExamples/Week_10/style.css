@@ -1,0 +1,20 @@
+h1 {
+    font-family: "Ubuntu", serif;
+    font-weight: 900;
+    font-style: normal;
+    text-align: center;
+    margin-bottom: 3px;
+    padding: 20px;
+    margin-left: 60px;
+    margin-right: 60px;
+}
+
+button {
+    font-family: "Ubuntu", serif;
+    font-weight: 500;
+    font-style: normal;
+}
+
+.colorBox {
+    text-align: center;
+}
