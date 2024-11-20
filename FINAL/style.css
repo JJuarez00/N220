@@ -1,0 +1,81 @@
+
+/* font setting */
+.title {
+    font-family: "Ubuntu", serif;
+    font-weight: 900;
+    font-style: normal;
+    text-align: center; 
+}
+
+.text {
+    font-family: "Ubuntu", serif;
+    font-weight: 900;
+    font-style: normal;
+}
+
+button {
+    font-family: "Ubuntu", serif;
+    font-weight: 500;
+    font-style: normal;
+}
+
+h1 {
+    border-style: dashed; /* looks at positioning */
+    padding: 10px;
+}
+
+.formBox {
+    border-style: dashed;
+    display: grid; 
+    grid-template-columns: auto auto; 
+    gap: 2px; 
+}
+
+.formBox label {
+    text-align: right; /* set texts to right */
+}
+
+.formBox input {
+    width: 200px; /* set a fixed width for the input fields */
+}
+
+.btnBox {
+    margin-top: 10px;
+    border-style: dashed; /* looks at positioning */
+    justify-content: center;
+    display: grid; 
+    grid-template-rows: auto auto; 
+    gap: 2px; 
+}
+
+.btnBox button {
+    width: 200px; /* set a fixed width for the buttons */
+}
+
+.newUser {
+    border-radius: 5px;
+    border-color: #ffffff;
+    background-color: rgb(240, 240, 240);
+    color: black;
+}
+
+.loginBTN {
+    border-radius: 5px;
+    border-color: #868686;
+    background-color: #868686;
+    color: #ffff;
+}
+
+.backBTN {
+    border-radius: 5px;
+    border-color: #ffffff;
+    background-color: rgb(240, 240, 240);
+    color: black;
+}
+
+.signupBTN {
+    border-radius: 5px;
+    border-color: #3a9cdc;    
+    background-color: #3a9cdc;
+    color: #ffff;
+}
