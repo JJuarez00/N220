@@ -4,7 +4,7 @@
 https://github.com/JJuarez00/N220/tree/main/FINAL
 
 ### Github Pages Link
-https://github.com/JJuarez00/N220/tree/main/FINAL/index.html
+https://jjuarez00.github.io/N220/FINAL/index.html
 
 ### UI LAYOUT
 - Login Form Page
