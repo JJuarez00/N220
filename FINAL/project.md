@@ -48,6 +48,7 @@ https://jjuarez00.github.io/N220/FINAL/index.html
 - Logic:
     - Username Validity:
         - There cannot be duplicate usernames
+    - If it passes, then add it to users array.
 
     - Password Validity:
         - Must NOT be empty
@@ -98,7 +99,44 @@ https://jjuarez00.github.io/N220/FINAL/index.html
         const user = {
             username: username
             password: password
+            tasks: task array
         }
-        
+        const task = {
+            title: title
+            status: status (incomplete or complete)
+        }
 ---
+    Login and Sign-in Page Functions
 
+        login(username, password) {
+            # validate credentials
+            # if valid, redirect to the dashboard and load user tasks
+            # if invalid, show an error message
+
+        }
+
+        logOut() {
+            # clear session and return to login
+        }
+---
+    Dashboard/Task Functions
+
+        loadPage() {
+            # if there is data associated with the username then load data, else continue as normal
+        }
+
+        addTask() {
+            # push a new task object into the tasks array
+        }
+
+        editTask() {
+            # update the task title at the specified index in the tasks array
+        }
+
+        removeTask() {
+            # remove the task at the specified index from the tasks array
+        }
+
+        toggleTask() {
+            # toggle the completed flag for the task at the specified index
+        }
