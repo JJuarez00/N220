@@ -1,8 +1,20 @@
 const users = [];
 
 function createUser() {
-    const username = document.getElementById("newUsername").value;
-    const password = document.getElementById("newPassword").value;
+    const username = document.getElementById("newUsername").value.trim();
+    const password = document.getElementById("newPassword").value.trim();
+
+
+    // Check if the username exists in the system
+    const usernameExists = users.some(user => user.username === username);
+
+    if (usernameExists) {
+        alert("This username already exists. Please choose a different username.");
+        document.getElementById("newUsername").value = "";
+        document.getElementById("newPassword").value = "";
+
+        return;
+    }
 
     const user = {
         username: username,
@@ -19,5 +31,6 @@ function createUser() {
     console.log(users);
 }
 
-
-// example: console.log(users[1].password) probbaly use later in something idk... ill see
+function login() {
+    // check if user login exist if so load html page
+}
