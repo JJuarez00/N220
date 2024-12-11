@@ -14,12 +14,13 @@
 }
 
 h1 {
-    border-style: dashed; /* looks at positioning */
+    /* border-style: dashed; looks at positioning */
     padding: 10px;
 }
 
 .formBox {
-    border-style: dashed;
+    margin-top: 60px;
+    /* border-style: dashed; looks at positioning */
     display: grid; 
     grid-template-columns: auto auto; 
     gap: 2px; 
@@ -35,11 +36,11 @@ h1 {
 
 .btnBox {
     margin-top: 10px;
-    border-style: dashed; /* looks at positioning */
+    /* border-style: dashed; looks at positioning */
     justify-content: center;
     display: grid; 
     grid-template-rows: auto auto; 
-    gap: 2px; 
+    gap: 3px; 
 }
 
 button{
@@ -108,7 +109,7 @@ button:hover {
 }
 
 .box {
-    border-style: dashed; /* looks at positioning */
+    /* border-style: dashed; looks at positioning */
     margin-bottom: 10px;
     font-family: "Ubuntu", serif;
     font-weight: 500;
@@ -119,7 +120,7 @@ button:hover {
 
 .hiddenBox {
     margin-top: 50px;
-    border-style: dashed; /* looks at positioning */
+    /* border-style: dashed; looks at positioning */
     justify-content: center;
     display: grid;
 }
@@ -139,7 +140,7 @@ button:hover {
 }
 
 .hiddenTXT {
-    border-style: dashed; /* looks at positioning */
+    /* border-style: dashed; looks at positioning */
     font-family: "Ubuntu", serif;
     font-weight: 900;
     font-style: normal;

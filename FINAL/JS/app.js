@@ -87,6 +87,8 @@ function login() {
     // check if user exists and check if passwords align
     if (users.find(user => user.username === username && user.password === password)) {
         
+        // store username for dashboard use
+        localStorage.setItem("loggedInUser", username);
         window.location.href = "dashboard.html";
     } else {
         message.textContent = "Invalid username or password. Please try again.";
@@ -101,7 +103,6 @@ function checkUsers() {
 
 // this onClick is here to delete all the users.
 function deleteAllUsers() {
-  const message = document.getElementById("message");
 
   // clear the users list
   localStorage.setItem("users", JSON.stringify([]));

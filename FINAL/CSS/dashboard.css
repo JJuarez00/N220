@@ -1,0 +1,31 @@
+.title {
+    font-size: 35px;
+    border-style: dotted;
+    font-family: "Ubuntu", serif;
+    font-weight: 900;
+    font-style: normal;
+    text-align: center; 
+}
+
+.top {
+    font-size: 20px;
+    margin-top: 10px;
+    border-style: dotted;
+    font-family: "Ubuntu", serif;
+    font-weight: 700;
+    font-style: normal;
+    text-align: center; 
+}
+
+button{
+    font-family: "Ubuntu", serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 13px;
+    border-radius: 5px;
+    box-shadow: .7px .7px black;
+}
+
+button:hover {
+    box-shadow: .3px .3px black;
+}
