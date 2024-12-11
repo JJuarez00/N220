@@ -7,17 +7,58 @@
     text-align: center; 
 }
 
-.top {
+.top1 {
     font-size: 20px;
     margin-top: 10px;
     border-style: dotted;
     font-family: "Ubuntu", serif;
     font-weight: 700;
     font-style: normal;
-    text-align: center; 
+    text-align: center;
+
 }
 
-button{
+.top2 {
+    font-size: 20px;
+    margin-top: 10px;
+    border-style: dotted;
+    font-family: "Ubuntu", serif;
+    font-weight: 700;
+    font-style: normal;
+    text-align: center;
+    display: grid;
+    grid-template-rows: auto auto; 
+    gap: 4px;
+    justify-content: center;
+}
+
+.logOutBTN:hover {
+    background-color: #d6d0d0;
+}
+
+.dim {
+    border-color: #ffffff;
+    background-color: #ffffff;
+    color: #e1e1e1;
+    box-shadow: .3px .3px rgb(255, 255, 255);
+}
+
+.dim:hover {
+    border-color: #e7e7e7;
+    background-color: #fcfcfc;
+    color: #d1d1d1;
+    box-shadow: .1px .1px #ffffff;
+}
+
+.top2 button {
+    width: 100%;
+}
+
+.addBTN:hover {
+    background-color: #d6d0d0;
+}
+
+button {
     font-family: "Ubuntu", serif;
     font-weight: 700;
     font-style: normal;
@@ -29,6 +70,35 @@ button{
 button:hover {
     box-shadow: .3px .3px black;
 }
+.BTNholder {
+    justify-content: center;
+    display: grid; 
+    grid-template-rows: auto auto; 
+    gap: 4px;     
+}
+.BTNholder button {
+    width: 130px;
+}
+
+.edit {
+    color: #3b3933;
+    background-color: #e4decc;
+}
+
+.edit:hover {
+    color: #2f2e29;
+    background-color: #d8cfb5;
+}
+
+.delete {
+    color: #f0e7e7;
+    background-color: #dd7b62;
+}
+
+.delete:hover {
+    color: #f1dbdb;
+    background-color: #dd6c4f;
+}
 
 .userText {
     font-size: 22.5px;
@@ -36,4 +106,43 @@ button:hover {
     color: #3d84c5;
     padding-left: 3px;
     padding-right: 3px;
+}
+
+.placeholderTXT {
+    font-family: "Ubuntu", serif;
+    font-weight: 700;
+}
+
+.typeTXT {
+    font-family: "Ubuntu", serif;
+    font-weight: 700;
+}
+
+.taskHolder {
+    justify-content: center;
+    gap: 3px; 
+    border-style: dashed;
+    margin: 10px;
+    display: flex;
+    gap: 10px;
+}
+
+.taskGrid {
+    border-style: dashed;
+    padding-left: 10%;
+    padding-right: 10%;
+    display: grid;
+    grid-template-columns: repeat(3, minmax(100px, 1fr));
+    gap: 20px;
+    margin: 20px;
+}
+
+.taskBox {
+    font-family: "Ubuntu", serif;
+    font-weight: 700;
+    text-align: center;    
+    padding: 10px;
+    border: 1px solid #c9c9c9;
+    border-radius: 5px;
+    background-color: #f9f9f9;
 }

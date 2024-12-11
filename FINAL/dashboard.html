@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="CSS/dashboard.css">
     <style>
-    @import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
     </style>    
     <title>Dashboard</title>
 </head>
@@ -13,11 +13,26 @@
 <body>
     <h1 class="title">Dashboard</h1>
 
-    <div id="message" class="top"></div>
-    <div class="top">
-        <button onclick="logOut()">Log Out</button>
+    <div id="message" class="top1"></div>
+    <div class="top2">
+        <button class="logOutBTN" onclick="logOut()">Log Out</button>
+        <button class="dim" onclick="viewTasks()">View Tasks in Console</button>
     </div>
 
+    <div class="taskHolder">
+        <input type="text" id="taskName"  class="placeholderTXT" placeholder="Task Name">
+
+        <select class="typeTXT" id="taskType">
+            <option value="Home">Home</option>
+            <option value="Work">Work</option>
+            <option value="School">School</option>
+            <option value="Other">Other</option>
+        </select>
+
+        <button class="addBTN" onclick="addTask()">Add Task</button>
+    </div>
+
+    <div id="taskContainer" class="taskGrid"></div>
 
     <script src="JS/dashboard.js"></script>
 </body>
