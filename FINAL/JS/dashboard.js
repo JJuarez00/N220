@@ -8,7 +8,7 @@ if (!loggedInUser) {
 
 const message = document.getElementById("message");
 
-message.textContent = `Welcome, ${loggedInUser}!`;
+message.innerHTML = `Welcome, <span class="userText">${loggedInUser}</span>!`;
 
 function logOut() {
     // remove loggedInUser
