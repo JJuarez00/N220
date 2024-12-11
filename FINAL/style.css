@@ -106,3 +106,13 @@ button:hover {
     background-color: #3090d0;
     color: #f0f0f0;
 }
+
+.box {
+    border-style: dashed; /* looks at positioning */
+    margin-bottom: 10px;
+    font-family: "Ubuntu", serif;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 16px;
+    text-align: center;
+}
