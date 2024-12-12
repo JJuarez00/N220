@@ -1,6 +1,8 @@
 
 /* font setting */
 .title {
+    margin-top: 90px;
+    /* border-style: dashed;  */
     font-family: "Ubuntu", serif;
     font-weight: 900;
     font-style: normal;
@@ -35,8 +37,8 @@ h1 {
 }
 
 .btnBox {
-    margin-top: 10px;
-    /* border-style: dashed; looks at positioning */
+    margin-top: 20px;
+    /* border-style: dashed; */
     justify-content: center;
     display: grid; 
     grid-template-rows: auto auto; 
@@ -109,7 +111,7 @@ button:hover {
 }
 
 .box {
-    height: 100px; /* Set a fixed height */
+    height: 80px; /* Set a fixed height */
     /* border-style: dashed; looks at positioning */
     margin-bottom: 10px;
     font-family: "Ubuntu", serif;
