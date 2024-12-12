@@ -33,19 +33,39 @@ function renderTasks() {
     tasks.forEach((task, index) => {
         const taskDiv = document.createElement("div");
         taskDiv.className = "taskBox";
+
+        // Set background color based on completion status
+        taskDiv.style.backgroundColor = task.complete ? "#c8e8c6" : "#f3dcd3";
+
         taskDiv.innerHTML = `
             <h3>${task.name}</h3>
-            <p><span class="taskType">${task.type}</span></p>
-            <p><input type="checkbox" ${task.complete ? "checked" : ""} onchange="toggleComplete(${index})"> Complete</p>
+            <p>
+                <select class="typeTXT" onchange="updateTaskType(${index}, this.value)">
+                    <option value="Home" ${task.type === "Home" ? "selected" : ""}>Home</option>
+                    <option value="Work" ${task.type === "Work" ? "selected" : ""}>Work</option>
+                    <option value="School" ${task.type === "School" ? "selected" : ""}>School</option>
+                    <option value="Other" ${task.type === "Other" ? "selected" : ""}>Other</option>
+                </select>
+            </p>
+            <p>
+                <input type="checkbox" ${task.complete ? "checked" : ""} onchange="toggleComplete(${index})"> Complete
+            </p>
             <div class="BTNholder">
-            <button class="edit" onclick="editTask(${index})">Edit</button>
-            <button class="delete" onclick="deleteTask(${index})">Delete</button>
+                <button class="edit" onclick="editTask(${index})">Edit</button>
+                <button class="delete" onclick="deleteTask(${index})">Delete</button>
             </div>
-            `;
-            taskContainer.appendChild(taskDiv);
-        }
-    );
+        `;
+        taskContainer.appendChild(taskDiv);
+    });
 }
+
+
+// function to update the task type when the dropdown is changed
+function updateTaskType(index, newType) {
+    tasks[index].type = newType; // update the type in the array
+    localStorage.setItem(tasksKey, JSON.stringify(tasks)); // save the updated array to localStorage
+}
+
 
 // add a new task
 function addTask() {

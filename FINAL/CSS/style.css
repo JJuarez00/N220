@@ -126,10 +126,12 @@ button:hover {
 }
 
 .hiddenBTN {
+    font-size: 15px;
     border-color: #ffffff;
     background-color: #ffffff;
+    padding: 5px;
     color: #e1e1e1;
-    box-shadow: .3px .3px rgb(255, 255, 255);
+    box-shadow: .2px .2px rgb(255, 255, 255);
 }
 
 .hiddenBTN:hover {

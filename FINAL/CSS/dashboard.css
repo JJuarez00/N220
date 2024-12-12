@@ -1,6 +1,6 @@
 .title {
     font-size: 35px;
-    border-style: dotted;
+    /* border-style: dashed; */
     font-family: "Ubuntu", serif;
     font-weight: 900;
     font-style: normal;
@@ -10,7 +10,7 @@
 .top1 {
     font-size: 20px;
     margin-top: 10px;
-    border-style: dotted;
+    /* border-style: dashed; */
     font-family: "Ubuntu", serif;
     font-weight: 700;
     font-style: normal;
@@ -21,7 +21,7 @@
 .top2 {
     font-size: 20px;
     margin-top: 10px;
-    border-style: dotted;
+    /* border-style: dashed; */
     font-family: "Ubuntu", serif;
     font-weight: 700;
     font-style: normal;
@@ -121,14 +121,14 @@ button:hover {
 .taskHolder {
     justify-content: center;
     gap: 3px; 
-    border-style: dashed;
+    /* border-style: dashed; */
     margin: 10px;
     display: flex;
     gap: 10px;
 }
 
 .taskGrid {
-    border-style: dashed;
+    /* border-style: dashed; */
     padding-left: 10%;
     padding-right: 10%;
     display: grid;
@@ -142,7 +142,6 @@ button:hover {
     font-weight: 700;
     text-align: center;    
     padding: 10px;
-    border: 1px solid #c9c9c9;
-    border-radius: 5px;
-    background-color: #f9f9f9;
+    border: 2px solid #1e1e1e;
+    border-radius: 10px;
 }
