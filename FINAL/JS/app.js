@@ -68,8 +68,6 @@ function createUser() {
     document.getElementById("newPassword").value = "";
 
     message.textContent = "Account successfully created!";
-
-    console.log(users); // for debugging, remove later
 }
 
 // login Button onClick
