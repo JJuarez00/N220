@@ -109,6 +109,7 @@ button:hover {
 }
 
 .box {
+    height: 100px; /* Set a fixed height */
     /* border-style: dashed; looks at positioning */
     margin-bottom: 10px;
     font-family: "Ubuntu", serif;
@@ -116,7 +117,13 @@ button:hover {
     font-style: normal;
     font-size: 16px;
     text-align: center;
+    overflow: hidden;
+    display: flex;
+    align-items: center; 
+    justify-content: center; 
+    box-sizing: border-box;
 }
+
 
 .hiddenBox {
     margin-top: 50px;
