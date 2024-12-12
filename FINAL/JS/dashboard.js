@@ -38,7 +38,7 @@ function renderTasks() {
         taskDiv.style.backgroundColor = task.complete ? "#c8e8c6" : "#f3dcd3";
 
         taskDiv.innerHTML = `
-            <h3>${task.name}</h3>
+            <h3 class="taskNAME">${task.name}</h3>
             <p>
                 <select class="typeTXT" onchange="updateTaskType(${index}, this.value)">
                     <option value="Home" ${task.type === "Home" ? "selected" : ""}>Home</option>
@@ -48,10 +48,10 @@ function renderTasks() {
                 </select>
             </p>
             <p>
-                <input type="checkbox" ${task.complete ? "checked" : ""} onchange="toggleComplete(${index})"> Complete
+                <input type="checkbox" ${task.complete ? "checked" : ""} onchange="toggleComplete(${index})"> COMPLETE
             </p>
             <div class="BTNholder">
-                <button class="edit" onclick="editTask(${index})">Edit</button>
+                <button class="edit" onclick="editTask(${index})">Edit Name</button>
                 <button class="delete" onclick="deleteTask(${index})">Delete</button>
             </div>
         `;
@@ -104,11 +104,9 @@ function toggleComplete(index) {
 // edit a task
 function editTask(index) {
     const newName = prompt("Enter new task name:", tasks[index].name);
-    const newType = prompt("Enter new task type (Home, Work, School, Other):", tasks[index].type);
 
-    if (newName && newType) {
+    if (newName) {
         tasks[index].name = newName.trim();
-        tasks[index].type = newType.trim();
         localStorage.setItem(tasksKey, JSON.stringify(tasks));
         renderTasks();
     }
