@@ -1,4 +1,5 @@
-### Final Project for N220
+### Final Project for N220 
+*(Note: Plans changed so some things did not end up in the finished project)*
 
 ### Github Repository Link
 https://github.com/JJuarez00/N220/tree/main/FINAL
